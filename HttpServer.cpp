@@ -8,7 +8,7 @@ int main()
     std::unique_ptr<evhttp, decltype(&evhttp_free)> EventHttp(evhttp_start("127.0.0.1", 8081), &evhttp_free);
     if (!EventHttp) return -1;
 
-    auto GenericReq = [](evhttp_request *req, void *obj)
+    auto GenericReq = [](evhttp_request* req, void*)
     {
         auto OutBuf = evhttp_request_get_output_buffer(req);
         if (!OutBuf) return;
