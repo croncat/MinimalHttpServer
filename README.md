@@ -13,6 +13,7 @@ $ mkdir build
 $ cd build
 $ cmake ..
 $ make
+$ echo '<html><body>Hello World!</body></html>' > index.html
 $ ./mhttp
 ~~~
 
