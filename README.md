@@ -1,4 +1,4 @@
-# MinimalHttpServer
+# MHTTP: Minimal HTTP Server
 
 Ubuntu dependencies:
 
@@ -13,7 +13,7 @@ $ mkdir build
 $ cd build
 $ cmake ..
 $ make
-$ ./HttpServer
+$ ./mhttp
 ~~~
 
 Done! Try to navigate to localhost:8081 :)
